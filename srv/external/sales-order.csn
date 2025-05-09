@@ -1,0 +1,67 @@
+{
+ "meta": {
+  "creator": "cds-dk 8.8.2"
+ },
+ "$version": "2.0",
+ "definitions": {
+  "salesorderodata": {
+   "kind": "service",
+   "@cds.external": true,
+   "@m.IsDefaultEntityContainer": "true"
+  },
+  "salesorderodata.SalesOrderCollection": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "@sap.creatable": "true",
+   "@sap.updatable": "true",
+   "@sap.deletable": "true",
+   "elements": {
+    "ObjectID": {
+     "key": true,
+     "type": "cds.String",
+     "length": 70,
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "true",
+     "notNull": true
+    },
+    "BuyerID": {
+     "type": "cds.String",
+     "length": 35,
+     "@sap.creatable": "true",
+     "@sap.updatable": "true",
+     "@sap.filterable": "true"
+    },
+    "PartyID": {
+     "type": "cds.String",
+     "length": 60,
+     "@sap.creatable": "true",
+     "@sap.updatable": "true",
+     "@sap.filterable": "true"
+    },
+    "Name": {
+     "type": "cds.String",
+     "length": 255,
+     "@sap.creatable": "true",
+     "@sap.updatable": "true",
+     "@sap.filterable": "true"
+    },
+    "FormattedName": {
+     "type": "cds.String",
+     "length": 80,
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "true"
+    },
+    "ID": {
+     "type": "cds.String",
+     "length": 35,
+     "@sap.creatable": "false",
+     "@sap.updatable": "false",
+     "@sap.filterable": "true"
+    }
+   }
+  }
+ }
+}
