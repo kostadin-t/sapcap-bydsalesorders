@@ -6,13 +6,15 @@
  "definitions": {
   "salesorderodata": {
    "kind": "service",
-   "@cds.external": true,
-   "@m.IsDefaultEntityContainer": "true"
+   "@m.IsDefaultEntityContainer": "true",
+   "@sap.creatable": "true",
+   "@sap.updatable": "true",
+   "@sap.deletable": "true",
+   "@fiori.draft.enabled": "true"
   },
   "salesorderodata.SalesOrderCollection": {
    "kind": "entity",
    "@cds.external": true,
-   "@cds.persistence.skip": true,
    "@sap.creatable": "true",
    "@sap.updatable": "true",
    "@sap.deletable": "true",
@@ -50,15 +52,15 @@
     "FormattedName": {
      "type": "cds.String",
      "length": 80,
-     "@sap.creatable": "false",
-     "@sap.updatable": "false",
+     "@sap.creatable": "true",
+     "@sap.updatable": "true",
      "@sap.filterable": "true"
     },
     "ID": {
      "type": "cds.String",
      "length": 35,
-     "@sap.creatable": "false",
-     "@sap.updatable": "false",
+     "@sap.creatable": "true",
+     "@sap.updatable": "true",
      "@sap.filterable": "true"
     }
    }

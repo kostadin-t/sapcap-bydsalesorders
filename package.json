@@ -17,7 +17,9 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-salesordersbyd": "cds watch --open salesordersbyd/webapp/index.html?sap-ui-xx-viewCache=false",
+    "hybridwatch-salesordersbyd": "cds watch --profile hybrid --open salesordersbyd/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -29,5 +31,9 @@
         }
       }
     }
-  }
+  },
+  "sapux": [
+    "app/salesordersbyd",
+    "app/salesordersbyd"
+  ]
 }
