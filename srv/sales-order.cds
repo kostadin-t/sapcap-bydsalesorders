@@ -1,10 +1,14 @@
-using { salesorderodata } from './external/sales-order';
+using { salesorderodata as RemoteByDSalesOrders } from './external/sales-order';
 
 service SalesOrdersList {
-  @sap.creatable: true
-  @sap.updatable: true
-  @sap.deletable: true
-  @Capabilities.Insertable : true
-  // @odata.draft.enabled: true
-  entity SalesOrder as projection on salesorderodata.SalesOrderCollection;
+  entity ByDSalesOrders as projection on RemoteByDSalesOrders.SalesOrderCollection {
+    key ObjectID as objectId,
+    ID as ID,
+    BuyerID as externalReference,
+    FormattedName as buyerName,
+    Name as description,
+    PartyID as partyId,
+    BuyerID as buyerId
+
+  }
 }

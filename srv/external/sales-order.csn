@@ -7,10 +7,8 @@
   "salesorderodata": {
    "kind": "service",
    "@m.IsDefaultEntityContainer": "true",
-   "@sap.creatable": "true",
-   "@sap.updatable": "true",
-   "@sap.deletable": "true",
-   "@fiori.draft.enabled": "true"
+   "@cds.external": "true",
+   "@sap.persistence.skip": "true"
   },
   "salesorderodata.SalesOrderCollection": {
    "kind": "entity",

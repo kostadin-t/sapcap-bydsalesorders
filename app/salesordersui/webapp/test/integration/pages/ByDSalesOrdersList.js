@@ -8,9 +8,9 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'ns.salesordersbyd',
-            componentId: 'SalesOrderList',
-            contextPath: '/SalesOrder'
+            appId: 'salesordersui',
+            componentId: 'ByDSalesOrdersList',
+            contextPath: '/ByDSalesOrders'
         },
         CustomPageDefinitions
     );

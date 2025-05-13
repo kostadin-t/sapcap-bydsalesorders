@@ -1,2 +1,2 @@
 
-using from './salesordersbyd/annotations';
+using from './salesordersui/annotations';

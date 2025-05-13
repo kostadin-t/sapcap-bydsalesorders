@@ -1,37 +1,42 @@
 using SalesOrdersList as service from '../../srv/sales-order';
-annotate service.SalesOrder with @(
+annotate service.ByDSalesOrders with @(
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'ObjectID',
-                Value : ObjectID,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'BuyerID',
-                Value : BuyerID,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'PartyID',
-                Value : PartyID,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Name',
-                Value : Name,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'FormattedName',
-                Value : FormattedName,
+                Label : 'objectId',
+                Value : objectId,
             },
             {
                 $Type : 'UI.DataField',
                 Label : 'ID',
                 Value : ID,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'externalReference',
+                Value : externalReference,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'buyerName',
+                Value : buyerName,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'description',
+                Value : description,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'partyId',
+                Value : partyId,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'buyerId',
+                Value : buyerId,
             },
         ],
     },
@@ -46,28 +51,28 @@ annotate service.SalesOrder with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'ObjectID',
-            Value : ObjectID,
+            Label : 'objectId',
+            Value : objectId,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'BuyerID',
-            Value : BuyerID,
+            Label : 'ID',
+            Value : ID,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'PartyID',
-            Value : PartyID,
+            Label : 'externalReference',
+            Value : externalReference,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'Name',
-            Value : Name,
+            Label : 'buyerName',
+            Value : buyerName,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'FormattedName',
-            Value : FormattedName,
+            Label : 'description',
+            Value : description,
         },
     ],
 );

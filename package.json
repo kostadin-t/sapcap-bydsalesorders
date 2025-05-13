@@ -18,8 +18,8 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-salesordersbyd": "cds watch --open salesordersbyd/webapp/index.html?sap-ui-xx-viewCache=false",
-    "hybridwatch-salesordersbyd": "cds watch --profile hybrid --open salesordersbyd/webapp/index.html?sap-ui-xx-viewCache=false"
+    "hybridwatch-salesordersui": "cds watch --profile hybrid --open salesordersui/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-salesordersui": "cds watch --open salesordersui/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -34,6 +34,7 @@
   },
   "sapux": [
     "app/salesordersbyd",
-    "app/salesordersbyd"
+    "app/salesordersbyd",
+    "app/salesordersui"
   ]
 }
